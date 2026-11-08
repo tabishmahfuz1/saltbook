@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Saltbook",
+  "version": "0.1.0",
+  "identifier": "com.saltbook.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Saltbook — Pharmaceutical ERP",
+        "width": 1480,
+        "height": 920,
+        "minWidth": 1120,
+        "minHeight": 700,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/icon.png", "icons/icon.icns", "icons/icon.ico"],
+    "category": "Business",
+    "shortDescription": "Pharmaceutical ERP, Billing, Inventory & Accounting",
+    "longDescription": "Saltbook is an offline-first pharmaceutical ERP covering billing, inventory, purchasing, accounting and cloud backup."
+  }
+}
